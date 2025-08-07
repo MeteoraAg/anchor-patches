@@ -29,6 +29,10 @@ impl<'info> Signer<'info> {
         }
         Ok(Signer::new(info))
     }
+
+    pub fn account_info(&self) -> &'info AccountInfo<'info> {
+        self.info
+    }
 }
 
 impl<'info, B> Accounts<'info, B> for Signer<'info> {

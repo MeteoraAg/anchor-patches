@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["patches"]
+members = ["anchor-patches"]
 
 [workspace.package]
 edition = "2021"

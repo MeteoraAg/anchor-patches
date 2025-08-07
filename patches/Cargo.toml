@@ -1,0 +1,8 @@
+[package]
+name = "anchor_patches"
+version = "0.0.2"
+authors = [""]
+edition = "2021"
+
+[dependencies]
+anchor-lang = "0.31.1"

@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["unchecked_account"]
+members = ["patches"]
 
 [workspace.package]
 edition = "2021"

@@ -10,6 +10,8 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+# The runner and every action used more than once are YAML anchors (`&name`), set where
+# they're first used and reused with `*name`. Bump them there.
 jobs:
   # Rust 1.85.0 is the toolchain of mercurial-vault and dynamic-staking, which build this crate
   clippy:
